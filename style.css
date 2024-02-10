@@ -1,88 +1,105 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: rgb(41, 3, 68);
+  background-color: #28223f;
 }
-#hd-button {
-  background-color: gold;
-  width: 50px;
-  height: auto;
-  color: black;
-  font-weight: 500;
-  /* border-radius: 10px; */
+section {
+  position: absolute;
+  margin: 50px 40%;
+  border-radius: 10px;
 }
-.main-container1 {
-  position: relative;
-  float: left;
-  height: 600px;
-  width: 700px;
-  background-color: rgb(177, 202, 15);
-  color: black;
-  margin: 100px 400px;
-}
-.main-container1 .main-container {
-  /* display: flex; */
-  background-color: aliceblue;
+
+.info {
+  background-color: #291d59;
   height: 400px;
-  width: 500px;
-}
-.main-container .main-div1 {
-  color: white;
-  font-size: 12px;
-  font-weight: 400;
-  text-align: center;
-  img {
-    border-radius: 50%;
-    border: 3px solid aqua;
-  }
-}
-.main-container .main-div2 {
+  width: 400px;
   color: white;
   font-size: 20px;
-  font-family: 400;
-  text-align: center;
-  button {
+  font-weight: 500;
+
+  p {
+    /* margin-left: 30px; */
+    text-align: center;
+    background-color: #291d59;
+  }
+  h2 {
+    background-color: #291d59;
+    text-align: center;
+  }
+}
+.info #logo {
+  /* position: absolute; */
+  background-color: gold;
+  color: black;
+  font-weight: 600;
+}
+.info img {
+  border-radius: 50%;
+  border: 3px solid aqua;
+  margin: 5px 25%;
+}
+
+/*Follower button and massege button*/
+
+.info .button {
+  display: flex;
+  margin-left: 10px;
+  gap: 10px;
+  background-color: #291d59;
+  padding: 5px;
+  :hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+  #btn1 {
     background-color: aqua;
-    margin: 5px;
-    padding: 3px;
-    font-size: 20px;
-    font-weight: 500;
+    color: black;
+    border-radius: 2px;
+    width: 100px;
   }
-  #second-button {
-    background: transparent;
-    border: 2px solid aqua;
+  #btn2 {
     color: aqua;
-    font-size: 20px;
-    font-weight: 500;
+    border: 3px solid aqua;
+    width: 100px;
   }
 }
-.footer-main {
-  background-color: aliceblue;
-  margin: 0 300px 50px 300px;
-  padding: 30px;
+
+/*socialmedia icon*/
+
+ul {
+  background-color: #291d59;
+  display: flex;
+  gap: 20px;
+  padding-inline-start: 90px;
+
+  :hover {
+    transform: scale(1.1);
+  }
 }
-h2 {
+.info .icon a {
+  position: relative;
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  background-color: #291d59;
+  /* color: white; */
+}
+
+/*this is skill section*/
+
+.main-section .skill {
+  background: #504b65;
+
+  width: 400px;
+  height: 200px;
   color: white;
   font-weight: 600;
 }
-footer .skill-button {
-  padding-top: 20px;
+.skill-list button {
+  display: flexbox;
+  gap: 13px;
   color: white;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  button {
-    font-size: 15px;
-    width: fit-content;
-    margin:5px;
-    padding: 5px;
-  }
-}
-.footer-main button {
-  color: white;
-  margin: 1px;
+  border: 2px solid white;
   width: 100px;
-  height: auto;
-  border: 0.5px solid;
-  cursor: pointer;
+  height: 30px;
 }
